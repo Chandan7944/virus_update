@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@android:drawable/btn_dropdown"
+        android:spinnerMode="dropdown"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:paddingBottom="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/display"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/country"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:paddingTop="10dp"
+                android:paddingLeft="10dp"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:id="@+id/country"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="40sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                tools:text="india"
+                android:paddingLeft="25dp" />
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/cases"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/cases"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:textSize="40sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                tools:text="0000+00"
+                android:paddingLeft="25dp"
+                android:textColor="@android:color/holo_blue_dark"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/recovery"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/recovery"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:textSize="40sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                tools:text="0000+00"
+                android:paddingLeft="25dp"
+                android:textColor="@android:color/holo_green_light"/>
+
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:text="@string/deaths"
+                android:textAllCaps="true"
+                android:textSize="30sp"
+                android:paddingTop="15dp"
+                android:paddingLeft="10dp"/>
+
+            <TextView
+                android:id="@+id/deaths"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:paddingTop="5dp"
+                android:textSize="40sp"
+                android:textAllCaps="true"
+                android:textStyle="bold"
+                tools:text="0000+00"
+                android:paddingLeft="25dp"
+                android:textColor="@android:color/holo_red_light"/>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/loading_spinner"
+            style="@style/Widget.AppCompat.ProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+
+

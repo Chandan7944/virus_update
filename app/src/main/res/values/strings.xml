@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">virus update</string>
+    <string name="country">Country:</string>
+    <string name="cases">Cases</string>
+    <string name="recovery">Recovery</string>
+    <string name="deaths">Deaths</string>
+</resources>
